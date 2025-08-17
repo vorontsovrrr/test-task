@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Minimal toast styles */
+.toast {
+  @apply pointer-events-auto rounded-md bg-slate-900 text-white px-4 py-2 shadow-lg ring-1 ring-black/10;
+}
+
+html, body, #___gatsby, #gatsby-focus-wrapper {
+  height: 100%;
+}
+
+/* Base typography */
+.prose {
+  @apply prose-slate max-w-none;
+}
+
+/* Prism theme tweaks */
+code[class*="language-"], pre[class*="language-"] {
+  text-shadow: none;
+}
+
+.prose pre code {
+  display: block;
+  overflow-x: auto;
+}
+
+
